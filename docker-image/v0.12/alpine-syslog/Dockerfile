@@ -10,6 +10,7 @@ ENV PATH /home/fluent/.gem/ruby/2.3.0/bin:$PATH
 RUN set -ex \
     && apk update && apk upgrade \
     && apk add --no-cache --virtual .build-deps \
+        git \
         build-base \
         ruby-dev \
         libffi-dev \
